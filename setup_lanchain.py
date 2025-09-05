@@ -1,3 +1,4 @@
+#%%
 from langchain_ollama.llms import OllamaLLM
 from langchain_core.prompts import PromptTemplate
 from langsmith import traceable
@@ -482,7 +483,7 @@ Einsteinium, a synthetic chemical element, was named in his honor in 1955, a few
 
     llm = OllamaLLM(
         temperature=0.1,
-        model="llama3.2:3b",
+        model="llama3.1:latest",
         base_url="http://localhost:11434",
         num_gpu=999,
         num_ctx=3072)
@@ -494,3 +495,6 @@ Einsteinium, a synthetic chemical element, was named in his honor in 1955, a few
 
 if __name__ == "__main__":
     main()
+# %%
+
+# create a function to test main 
